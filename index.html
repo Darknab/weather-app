@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <button id="pref-temp">Celcius</button>
+    <button id="pref-temp">Celsius</button>
     <button id="pref-wind">Km/h</button>
     <form>
       <label for="search"></label>
@@ -18,19 +18,27 @@
     </form>
   </header>
   <div class="main">
-
     <h1 id="location"></h1>
-    <p id="time"></p>
-    <p id="now"></p>
     <div class="card-now">
+      <h2 id="now"></h2>
       <p id="condition"></p>
       <p id="temperature"></p>
       <p id="humidity"></p>
       <p id="wind"></p>
     </div>
-    <div class="forecast-card">
-
+    <p id="time"></p>
+    <div class="select-btns">
+      <button class="select-day active" id="day0"></button>
+      <button class="select-day" id="day1"></button>
+      <button class="select-day" id="day2"></button>
     </div>
+    <div class="card-forecast">
+      <p id="forecast-condition"></p>
+      <p id="min-temp"></p>
+      <p id="max-temp"></p>
+      <p id="rain-chance"></p>
+      <p id="snow-chance"></p>
+  </div>
   </div>
   <script src="script.js"></script>
 </body>

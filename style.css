@@ -54,37 +54,71 @@ input {
 }
 
 .main {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 #location {
   text-align: center;
 }
 
-#time,
-#now {
+#time {
   font-size: 2rem;
   text-align: center;
 }
 
-.card-now {
+.select-day.active {
   background-color: var(--bg-secondary);
   color: var(--text-color-secondary);
-  max-width: 200px;
+}
+
+.card-now,
+.card-forecast {
+  background-color: var(--bg-secondary);
+  color: var(--text-color-secondary);
   margin: 2rem auto;
   padding: 1rem;
-  background-size: 50%;
   background-repeat: no-repeat;
   border-radius: 10px;
   box-shadow: 5px 5px grey;
 }
 
+.card-now {
+  max-width: 200px;
+  background-size: 50%;
+
+}
+
+.card-forecast {
+  max-width: 400px;
+  font-size: 1.5rem;
+  background-size: 25%;
+  min-height: 10rem;
+}
+
+.select-btns {
+  text-align: center;
+}
+
+.select-day {
+  background-color: var(--bg-cta);
+  color: var(--text-color-secondary);
+  padding: 0.5rem 1rem;
+  width: 7rem;
+}
+
 #condition,
-#temperature {
+#temperature,
+#now,
+#forecast-condition,
+#min-temp,
+#max-temp,
+#rain-chance,
+#snow-chance {
   text-align: end;
 }
 
-#temperature {
+#temperature,
+#now {
   font-size: 2rem;
   font-weight: 700;
 }
