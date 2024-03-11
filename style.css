@@ -1,6 +1,7 @@
 :root {
   --bg-primary: #0f172a;
   --bg-secondary: #cbd5e1;
+  --bg-cta: #fcd34d;
   --text-color-primary: var(--bg-secondary);
   --text-color-secondary: var(--bg-primary);
 }
@@ -18,10 +19,17 @@ body {
   color: var(--text-color-primary);
 }
 
+header {
+  display: flex;
+  min-width: 100%;
+  gap: 1rem;
+}
+
 form {
-  min-width: 600px;
+  min-width: 60%;
   text-align: center;
   padding: 1rem;
+  margin-left: auto;
 }
 
 input {
@@ -40,6 +48,7 @@ input {
   margin-left: 2rem;
   border: none;
   font-size: 1.5rem;
+  color: var(--text-color-primary);
   background-color: transparent;
   cursor: pointer;
 }
@@ -79,6 +88,20 @@ input {
   font-size: 2rem;
   font-weight: 700;
 }
+
+#pref-temp,
+#pref-wind {
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-radius: 10px;
+  background-color: var(--bg-cta);
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 
 
 

@@ -8,14 +8,17 @@
   <title>Weather app</title>
 </head>
 <body>
-  <form>
-    <label for="search"></label>
-    <input type="text" name="search" id="search" placeholder="Search location">
-    <button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-  </form>
-  <div class="main">
+  <header>
     <button id="pref-temp">Celcius</button>
     <button id="pref-wind">Km/h</button>
+    <form>
+      <label for="search"></label>
+      <input type="text" name="search" id="search" placeholder="Search location">
+      <button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </header>
+  <div class="main">
+
     <h1 id="location"></h1>
     <p id="time"></p>
     <p id="now"></p>
@@ -24,6 +27,9 @@
       <p id="temperature"></p>
       <p id="humidity"></p>
       <p id="wind"></p>
+    </div>
+    <div class="forecast-card">
+
     </div>
   </div>
   <script src="script.js"></script>
