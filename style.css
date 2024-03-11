@@ -1,0 +1,84 @@
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #cbd5e1;
+  --text-color-primary: var(--bg-secondary);
+  --text-color-secondary: var(--bg-primary);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-color-primary);
+}
+
+form {
+  min-width: 600px;
+  text-align: center;
+  padding: 1rem;
+}
+
+input {
+  min-width: 80%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+#submit {
+  margin-left: 2rem;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+#location {
+  text-align: center;
+}
+
+#time,
+#now {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-now {
+  background-color: var(--bg-secondary);
+  color: var(--text-color-secondary);
+  max-width: 200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+}
+
+#condition,
+#temperature {
+  text-align: end;
+}
+
+#temperature {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
